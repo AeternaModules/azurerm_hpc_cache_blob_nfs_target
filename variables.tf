@@ -21,7 +21,7 @@ EOT
     resource_group_name           = string
     storage_container_id          = string
     usage_model                   = string
-    access_policy_name            = optional(string, "default")
+    access_policy_name            = optional(string) # Default: "default"
     verification_timer_in_seconds = optional(number)
     write_back_timer_in_seconds   = optional(number)
   }))
